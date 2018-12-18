@@ -1,5 +1,5 @@
 body {
-  background: #011C00;
+  background: #242832;
   color: #CACACC;
   font-family: 'Roboto Mono', monospace;
   font-size: .8em;
@@ -55,7 +55,7 @@ h2 {
   margin: 0 0 2em 0;
 }
 .changelog a {
-  color: #2BB049;
+  color: #7A9700;
   text-decoration: none;
 }
 .changelog .title {
