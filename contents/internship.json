@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "type": "intern",
+      "date": "2019",
+      "description": {
+        "emphasis": "EPAM Systems FrontEnd/JavaScript Development [Kyiv] Autumn 2019",
+        "info": "JavaScript"
+      }
+    },
+    {
+      "type": "intern",
+      "date": "June 2019",
+      "description": {
+        "emphasis": "CTDev",
+        "info": "Salesforce Development"
+      }
+    },
+    {
+      "type": "intern",
+      "date": "August 2018",
+      "description": {
+        "emphasis": "Smart Business academy",
+        "info": "Microsoft Dynamics CRM Development"
+      }
+    },
+    {
+      "type": "intern",
+      "date": "2016",
+      "description": {
+        "emphasis": "EPAM Systems Java Web Development - Autumn 2016",
+        "info": "Java"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "type": "hobby",
+      "description": {
+        "title": "Microcomputers, Computer vision, RaspberryPi",
+        "technologies": "Linux, OpenCV, Python",
+        "photo": "img/pi1.jpg"
+      }
+    }
+  ]
+}

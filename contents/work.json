@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "type": "job",
+      "date": "2021",
+      "job": {
+        "position": "Software engineer",
+        "company": "Luxoft",
+        "description": "React, Typescript, Java8, Spring framework"
+      }
+    },
+    {
+      "type": "job",
+      "date": "2020",
+      "job": {
+        "position": "Integration full-stack software engineer",
+        "company": "Mediastream / GlobalBet",
+        "description": "React, Java8, Spring framework"
+      }
+    },
+    {
+      "type": "job",
+      "date": "2019",
+      "job": {
+        "position": "Full stack software engineer",
+        "company": "Zaraffasoft",
+        "description": "Html, Css, JavaScript, Java8, Play framework, Salesforce"
+      }
+    },
+    {
+      "type": "job",
+      "date": "2019",
+      "job": {
+        "position": "Full stack software engineer",
+        "company": "Customertimes / CTDev",
+        "description": ""
+      }
+    },
+    {
+      "type": "job",
+      "date": "2019",
+      "job": {
+        "position": "Full stack software engineer",
+        "company": "Elma / Promotor​",
+        "description": "Swing, J2ee, Vue.js, Spring framework, MySQL"
+      }
+    },
+    {
+      "type": "job",
+      "date": "2018",
+      "job": {
+        "position": "Full stack softaware engineer",
+        "company": "Providna​",
+        "description": "Liferay, JSF, Primefaces, EJB3, J2ee, OracleDB"
+      }
+    },
+    {
+      "type": "job",
+      "date": "2012",
+      "job": {
+        "position": "Software engineer",
+        "company": "go2.com.ua",
+        "description": "Html, Css, jQuery, Php, MySQL"
+      }
+    }
+  ]
+}
