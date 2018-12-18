@@ -1,0 +1,21 @@
+{
+  "data": [
+    {
+      "type": "job",
+      "date": "June 2018",
+      "description": {
+        "what": "Started as Fullstack Software Engineer",
+        "emphasis": "IC Providna",
+        "info": "Joined as a fullstack software engineer making cool web things."
+      }
+    },
+    {
+      "type": "fan",
+      "date": "May 2012",
+      "description": {
+        "what": "Started my own project",
+        "emphasis": "go2",
+        "info": "Started my own project <a href='http://www.go2.com.ua/'>go2.com.ua</a>!"
+      }
+    },
+}
