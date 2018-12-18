@@ -1,5 +1,5 @@
 body {
-  background: #222222;
+  background: #24252D;
   color: #CACACC;
   font-family: 'Roboto Mono', monospace;
   font-size: .8em;
@@ -119,7 +119,7 @@ h2 {
   margin: 0 0 2em 0;
 }
 .updates a {
-  color: #E9BC3F;
+  color: #2BB049;
   text-decoration: none;
 }
 .updates .title {
