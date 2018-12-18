@@ -1,5 +1,5 @@
 body {
-  background: #24252D;
+  background: #222222;
   color: #CACACC;
   font-family: 'Roboto Mono', monospace;
   font-size: .8em;
@@ -22,7 +22,7 @@ h2 {
   margin: 0 0 1.5em 0;
 }
 .links a {
-  color: #CACACC;
+  color: #2BB049;
   margin: auto 1em auto 0;
 }
 .intro {
