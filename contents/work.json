@@ -17,6 +17,15 @@
         "emphasis": "EPAM Systems",
         "info": "Java Web Development - autumn 2016"
       }
+    },
+    {
+      "type": "job",
+      "date": "August 2011",
+      "description": {
+        "what": "Work at",
+        "emphasis": "Kievenergo",
+        "info": "Technical engineering"
+      }
     }
   ]
 }
