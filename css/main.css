@@ -1,5 +1,5 @@
 body {
-  background: #242832;
+  background: #1C2135;
   color: #CACACC;
   font-family: 'Roboto Mono', monospace;
   font-size: .8em;
@@ -22,7 +22,7 @@ h2 {
   margin: 0 0 1.5em 0;
 }
 .links a {
-  color: #CACACC;
+  color: #E9EBEF;
   margin: auto 1em auto 0;
 }
 .intro {
@@ -55,7 +55,7 @@ h2 {
   margin: 0 0 2em 0;
 }
 .changelog a {
-  color: #7A9700;
+  color: #5A6794;
   text-decoration: none;
 }
 .changelog .title {
@@ -119,7 +119,7 @@ h2 {
   margin: 0 0 2em 0;
 }
 .updates a {
-  color: #7A9700;
+  color: #5A6794;
   text-decoration: none;
 }
 .updates .title {
@@ -221,10 +221,10 @@ h2 {
   margin: 2em 0;
 }
 .job .left:before {
-  background: #24D05A;
+  background: #32CD32;
 }
 .job em {
-  color: #D5CE6D;
+  color: #32CD32;
   font-style: normal;
 }
 .event .left:before {
@@ -234,13 +234,31 @@ h2 {
   color: #EB4888;
   font-style: normal;
 }
-.fun .left:before {
-  background: #10A2F5;
+
+.intern .left:before{
+  background: #FFB55A;
 }
-.fun em {
-  color: #10A2F5;
+
+.intern em{
+  color: #FFB55A;
   font-style: normal;
 }
+.fun .left:before {
+  background: #D4BD87;
+}
+.fun em {
+  color: #D4BD87;
+  font-style: normal;
+}
+
+.edu .left:before {
+  background: #94B0B7;
+}
+.edu em {
+  color: #94B0B7;
+  font-style: normal;
+}
+
 .flash {
   animation: 1s flash infinite;
 }

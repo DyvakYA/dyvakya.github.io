@@ -4,18 +4,18 @@
       "type": "job",
       "date": "June 2018",
       "description": {
-        "what": "Joined full-time at",
+        "what": "Joined full-time at ",
         "emphasis": "IC Providna",
         "info": "As a fullstack software engineer making cool web things."
       }
     },
     {
-      "type": "fun",
-      "date": "May 2012",
+      "type": "intern",
+      "date": "October 2016",
       "description": {
-        "what": "Started my own project",
-        "emphasis": "go2",
-        "info": "<a href='http://www.go2.com.ua/'>go2.com.ua</a>!"
+        "what": "Interned at",
+        "emphasis": "EPAM Systems",
+        "info": "Java Web Development - autumn 2016"
       }
     }
   ]

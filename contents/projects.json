@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "url": "https://github.com/DyvakYA/login",
+      "title": "E commerce store (without frameworks)"
+    },
+    {
+      "url": "https://github.com/DyvakYA/honest.bank",
+      "title": "Online banking system"
+    },
+    {
+      "url": "https://github.com/DyvakYA/e-commerce-store",
+      "title": "E commerce store (without frameworks, with java 8)"
+    },
+    {
+      "url": "https://github.com/DyvakYA/LogisticCompany",
+      "title": "Logistic company"
+    },
+    {
+      "url": "https://github.com/DyvakYA/Collections",
+      "title": "Collections"
+    },
+    {
+      "url": "https://github.com/DyvakYA/java-design-patterns",
+      "title": "Java design patterns"
+    },
+    {
+      "url": "http://go2.com.ua",
+      "title": "Real estate project"
+    }
+  ]
+}
