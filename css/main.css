@@ -244,18 +244,18 @@ h2 {
   font-style: normal;
 }
 .fun .left:before {
-  background: #D4BD87;
+  background: #FFB55A;
 }
 .fun em {
-  color: #D4BD87;
+  color: #FFB55A;
   font-style: normal;
 }
 
 .edu .left:before {
-  background: #94B0B7;
+  background: #32CD32;
 }
 .edu em {
-  color: #94B0B7;
+  color: #32CD32;
   font-style: normal;
 }
 
