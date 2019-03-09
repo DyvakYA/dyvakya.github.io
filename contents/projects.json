@@ -1,32 +1,49 @@
 {
   "data": [
     {
-      "url": "https://github.com/DyvakYA/login",
-      "title": "E commerce store (without frameworks)"
-    },
-    {
-      "url": "https://github.com/DyvakYA/honest.bank",
-      "title": "Online banking system"
-    },
-    {
-      "url": "https://github.com/DyvakYA/e-commerce-store",
-      "title": "E commerce store (without frameworks, with java 8)"
-    },
-    {
-      "url": "https://github.com/DyvakYA/LogisticCompany",
-      "title": "Logistic company"
+      "url": "http://go2.com.ua",
+      "title": "Real estate project",
+      "technologies": "PHP, jQuery, MySQL"
     },
     {
       "url": "https://github.com/DyvakYA/Collections",
-      "title": "Collections"
+      "title": "Collections",
+      "technologies": "Java"
     },
     {
       "url": "https://github.com/DyvakYA/java-design-patterns",
-      "title": "Java design patterns"
+      "title": "Java design patterns",
+      "technologies": "Java"
     },
     {
-      "url": "http://go2.com.ua",
-      "title": "Real estate project"
+      "url": "https://github.com/DyvakYA/login",
+      "title": "E commerce store (without frameworks)",
+      "technologies": "JSP, ServletAPI, JDBC, MySQL"
+    },
+    {
+      "url": "https://github.com/DyvakYA/honest.bank",
+      "title": "Online banking system",
+      "technologies": "Spring, PostgresSQL"
+    },
+    {
+      "url": "https://github.com/DyvakYA/e-commerce-store",
+      "title": "E commerce store (without frameworks, with java 8)",
+      "technologies": "Java8, JSP, ServletAPI, JDBC, MySQL"
+    },
+    {
+      "url": "https://github.com/DyvakYA/LogisticCompany",
+      "title": "Logistic company",
+      "technologies": "AngularJS, Spring, MongoDB"
+    },
+    {
+      "url": "https://github.com/DyvakYA/vue.js_go",
+      "title": "Store",
+      "technologies": "Vue.js, Golang, MySQL"
+    },
+    {
+      "url": "https://github.com/DyvakYA/react.js_python",
+      "title": "Store",
+      "technologies": "ReactJS, Python, SQLLite"
     }
   ]
 }
