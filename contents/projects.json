@@ -22,7 +22,7 @@
     },
     {
       "url": "https://github.com/DyvakYA/honest.bank",
-      "title": "Online banking system",
+      "title": "Online banking system (Only backend)",
       "technologies": "Spring, PostgresSQL"
     },
     {
@@ -37,12 +37,12 @@
     },
     {
       "url": "https://github.com/DyvakYA/vue.js_go",
-      "title": "Store",
-      "technologies": "Vue.js, Golang, MySQL"
+      "title": "E-commerce store",
+      "technologies": "VueJS, Golang, MySQL"
     },
     {
       "url": "https://github.com/DyvakYA/react.js_python",
-      "title": "Store",
+      "title": "E-commerce store",
       "technologies": "ReactJS, Python, SQLLite"
     }
   ]
