@@ -2,10 +2,19 @@
   "data": [
     {
       "type": "job",
-      "date": "January 2019",
+      "date": "July 2019",
       "description": {
         "what": "Work in ",
-        "emphasis": "ELMA​",
+        "emphasis": "CTDev corp",
+        "info": "New opportunities for improving skills"
+      }
+    },
+    {
+      "type": "job",
+      "date": "January 2019",
+      "description": {
+        "what": "Worked in ",
+        "emphasis": "ELMA",
         "info": "Swing + J2EE + MySQL & Vue.js + Spring + MySQL"
       }
     },
@@ -25,15 +34,6 @@
         "what": "Interned at",
         "emphasis": "EPAM Systems",
         "info": "JSP + Servlet API + JDBC + MySQL"
-      }
-    },
-    {
-      "type": "job",
-      "date": "August 2011",
-      "description": {
-        "what": "Worked at",
-        "emphasis": "Kievenergo",
-        "info": "Technical engineering"
       }
     }
   ]
