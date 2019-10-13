@@ -52,7 +52,6 @@ function education() {
     pull('contents/education.json')
         .then(function (response) {
             document.getElementsByClassName('loading')[0].classList.add('hide');
-            console.log(JSON.stringify(response.data))
             response.data.forEach(function (x) {
                 h.innerHTML += '<li class="' + x.type +
                     '"><div class="left">' + x.date +
@@ -126,7 +125,6 @@ function hobbies() {
 function projects(articles) {
     let p = document.getElementById('projects-block');
     let load = document.getElementsByClassName('loading')
-    console.log(JSON.stringify(load))
     document.getElementsByClassName('loading')[5].classList.add('hide');
     articles.forEach(function (item) {
         p.innerHTML += '<li><a href="' + item.url + '">' + item.title + '</a></li>';
