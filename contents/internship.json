@@ -1,16 +1,16 @@
 {
   "data": [
     {
-      "type": "edu",
+      "type": "intern",
       "date": "June 2019",
       "description": {
         "what": "Finished course in Customertimes",
         "emphasis": "Salesforce Development",
-        "info": "<a href='https://www.udemy.com/'>https://www.udemy.com/</a>"
+        "info": "<a href='http://customertimes.com/'>http://customertimes.com/</a>"
       }
     },
     {
-      "type": "edu",
+      "type": "intern",
       "date": "August 2018",
       "description": {
         "what": "Visited course in Smart business academy",
@@ -23,7 +23,7 @@
       "date": "2016",
       "description": {
         "what": "Interned at",
-        "emphasis": "EPAM Systems",
+        "emphasis": "EPAM Systems Java Web Development",
         "info": "JSP + Servlet API + JDBC + MySQL"
       }
     }

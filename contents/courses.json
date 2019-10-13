@@ -2,29 +2,11 @@
   "data": [
     {
       "type": "edu",
-      "date": "June 2019",
-      "description": {
-        "what": "Finished course in Customertimes",
-        "emphasis": "Salesforce Development",
-        "info": "<a href='https://www.udemy.com/'>https://www.udemy.com/</a>"
-      }
-    },
-    {
-      "type": "edu",
       "date": "September 2018",
       "description": {
         "what": "Finished course in udemy",
         "emphasis": "Microservices Software Architecture: Patterns and Techniques",
         "info": "<a href='https://www.udemy.com/'>https://www.udemy.com/</a>"
-      }
-    },
-    {
-      "type": "edu",
-      "date": "August 2018",
-      "description": {
-        "what": "Visited course in Smart business academy",
-        "emphasis": "Microsoft Dynamics CRM Development",
-        "info": "<a href='https://www.facebook.com/smartbacademy/'>Smart business academy</a>"
       }
     },
     {
@@ -50,7 +32,7 @@
       "date": "January 2018",
       "description": {
         "what": "Finished course",
-        "emphasis": "Java pro",
+        "emphasis": "Java PRO",
         "info": "<a href='https://prog.kiev.ua/'>https://prog.kiev.ua/</a>"
       }
     },

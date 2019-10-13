@@ -6,9 +6,53 @@ body {
   display: flex;
   justify-content: center;
 }
+
+button {
+  width: 120px;
+  height: 30px;
+  border: 2px solid #96979c;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #96979c;
+  font-size: 1rem;
+  overflow: auto;
+  transition: 0.4s ease all;
+}
+
 .container {
   max-width: 650px;
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.header-frame{
+  max-width: 400px;
+}
+
+.img-frame {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 0 10px 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img-frame img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+
 h1 {
   font-weight: 400;
   margin: 0;
@@ -67,15 +111,17 @@ h2 {
 .changelog .title:before {
   content: '[+] ';
 }
+
 .changelog .exp {
   display: none;
 }
+
 .changelog ul {
   list-style-type: none;
   padding: 0;
 }
 .changelog ul li {
-  margin: 2em 0;
+  margin-bottom: 1em;
 }
 .changelog li {
   display: flex;
@@ -94,20 +140,20 @@ h2 {
   border-radius: 100%;
   margin: 0 2em 0 0;
 }
-.changelog li .desc {
-  display: flex;
-  flex-direction: column;
-}
-.changelog li .desc .info {
-  visibility: hidden;
-  max-height: 0;
-  transition: visibility 0s, max-height 0.5s linear;
-}
-.changelog li .desc:hover .info {
-  visibility: visible;
-  max-height: 100px;
-  transition: max-height 0.5s linear;
-}
+/*.changelog li .desc {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*}*/
+/*.changelog li .desc .info {*/
+/*  visibility: hidden;*/
+/*  max-height: 0;*/
+/*  transition: visibility 0s, max-height 0.5s linear;*/
+/*}*/
+/*.changelog li .desc:hover .info {*/
+/*  visibility: visible;*/
+/*  max-height: 100px;*/
+/*  transition: max-height 0.5s linear;*/
+/*}*/
 .changelog .loading {
   animation: blinker 1s linear infinite;
   margin: 1em 0 0 0;
@@ -138,9 +184,9 @@ h2 {
   list-style-type: none;
   padding: 0;
 }
-.updates ul li {
-  margin: 2em 0;
-}
+/*.updates ul li {*/
+/*  margin: 2em 0;*/
+/*}*/
 .updates .loading {
   animation: blinker 1s linear infinite;
   margin: 1em 0 0 0;
@@ -189,6 +235,7 @@ h2 {
 .expand .exp {
   display: block;
 }
+
 @keyframes blinker {
   50% {
     opacity: 0.0;
@@ -280,4 +327,16 @@ h2 {
   .links a {
     margin: auto 1.5em auto 0;
   }
+}
+
+#education-frame{
+  display: none;
+}
+
+#work-frame{
+  display: none;
+}
+
+#hobby-frame{
+  display: none;
 }

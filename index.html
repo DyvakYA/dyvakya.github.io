@@ -5,12 +5,12 @@
     <meta name="description" content="Dyvak Yurii, Software Engineer in Kyiv."/>
 
     <!-- Favicon/theme -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -37,48 +37,43 @@
 </head>
 <body>
 <div class="container">
-    <h1>Dyvak Yurii</h1>
-    <h2>Software Engineer in Kyiv</h2>
-    <div class="links">
-        <a href="http://github.com/dyvakya">github</a>
-        <a href="https://www.facebook.com/dyvakyurii">facebook</a>
-        <a href="http://www.linkedin.com/in/dyvak">linkedin</a>
-        <a href="http://www.dyvakya.github.io/blog">blog</a>
-        <a href="mailto:dyvakyurii@gmail.com">email</a>
+    <div class="header">
+        <div class="header-frame">
+            <h1 class="flash">Dyvak Yurii</h1>
+            <h2>Software Engineer in Kyiv</h2>
+            <div class="links">
+                <a href="http://github.com/dyvakya">github</a>
+                <a href="https://www.facebook.com/dyvakyurii">facebook</a>
+                <a href="http://www.linkedin.com/in/dyvak">linkedin</a>
+                <a href="http://www.dyvakya.github.io/blog">blog</a>
+                <a href="mailto:dyvakyurii@gmail.com">email</a>
+            </div>
+            <button id="education"
+                    style="border-color: rgb(150, 151, 156); color: rgb(150, 151, 156); font-weight: bold;">
+                Education
+            </button>
+            <button id="work" style="border-color: rgb(150, 151, 156); color: rgb(150, 151, 156); font-weight: bold;">
+                Work
+            </button>
+            <button id="hobby" style="border-color: rgb(150, 151, 156); color: rgb(150, 151, 156); font-weight: bold;">
+                Hobby
+            </button>
+        </div>
+
+        <div class="img-frame">
+            <img src="img/photos/photo_1.jpg">
+        </div>
     </div>
+
     <div class="intro">
-        Hi, I'm Yurii, and I am a Software Engineer in Kyiv!
-    </div>
-
-    <div class="changelog">
-        <div class="title flash">Academic qualifications</div>
-        <div class="exp">
-            <div class="loading">Loading...</div>
-            <ul id="education">
-            </ul>
-        </div>
-    </div>
-
-    <div class="changelog">
-        <div class="title flash">Work experience and internships</div>
-        If you're interested in more specific details on timelines, head over to my
-        <a href="http://linkedin.com/in/dyvak">LinkedIn</a>.
-        <div class="exp">
-            <div class="loading">Loading...</div>
-            <ul id="work">
-            </ul>
-        </div>
-    </div>
-
-    <div class="updates">
-        <div class="title flash">My projects</div>
-        If you want to dive into the code, you should see my
-        <a href="https://github.com/dyvakya/">GitHub</a>.
-        <div class="exp">
-            <div class="loading">Loading...</div>
-            <ul id="projects">
-            </ul>
-        </div>
+        Dyvak Yurii is a Ph.D. student in Institute of Software Systems of NAS of Ukraine.
+        He got his B.Sc. degree from National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnical
+        Institute"
+        in computer science in 2009, and got his M.Sc. degree from NTUU "KPI" in 2012.
+        He is works on Semantic Web Services ans Web Service Composition.
+        He current research focuses on Web-based technologies,
+        software engineering, service oriented computing, object-oriented,
+        design patterns. Contact him at <a href="mailto:dyvakyurii@gmail.com"> dyvakyurii@gmail.com</a>
     </div>
 
     <div class="end">
@@ -90,21 +85,94 @@
         life.
     </div>
 
-    <div class="changelog">
-        <div class="title flash">Banners</div>
-        <div class="exp">
-            <div>
-                <a href="http://www.certifications.ru/resume/216050">
-                    <img src="http://www.certifications.ru/static/images/banner/71en.png" border=3 width="150"></a>
-                <a href="http://www.certifications.ru/resume/216050">
-                    <img src="http://www.certifications.ru/static/images/banner/18en.png" border=3 width="150"></a>
-                <a href="http://www.certifications.ru/resume/216050">
-                    <img src="http://www.certifications.ru/static/images/banner/74en.png" border=3 width="150"></a>
-                <a href="http://www.certifications.ru/resume/216050">
-                    <img src="http://www.certifications.ru/static/images/banner/69en.png" border=3 width="150"></a>
+    <!-- Block for education information-->
+    <div id="education-frame">
+        <div class="changelog">
+            <div class="title flash">Academic qualifications</div>
+            <div class="exp">
+                <div class="loading">Loading...</div>
+                <ul id="education-block">
+                </ul>
+            </div>
+        </div>
+        <div class="changelog">
+            <div class="title flash">Internships</div>
+            <div class="exp">
+                <div class="loading">Loading...</div>
+                <ul id="internship-block">
+                </ul>
+            </div>
+        </div>
+        <div class="changelog">
+            <div class="title flash">Courses</div>
+            <div class="exp">
+                <div class="loading">Loading...</div>
+                <ul id="courses-block">
+                </ul>
+                <div>
+                    <a href="http://www.certifications.ru/resume/216050">
+                        <img src="http://www.certifications.ru/static/images/banner/71en.png" border=3 width="150"></a>
+                    <a href="http://www.certifications.ru/resume/216050">
+                        <img src="http://www.certifications.ru/static/images/banner/18en.png" border=3 width="150"></a>
+                    <a href="http://www.certifications.ru/resume/216050">
+                        <img src="http://www.certifications.ru/static/images/banner/74en.png" border=3 width="150"></a>
+                    <a href="http://www.certifications.ru/resume/216050">
+                        <img src="http://www.certifications.ru/static/images/banner/69en.png" border=3 width="150"></a>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <div id="work-frame">
+        <div class="changelog">
+            <div class="title flash">Work experience</div>
+            If you're interested in more specific details on timelines, head over to my
+            <a href="http://linkedin.com/in/dyvak">LinkedIn</a>.
+            <div class="exp">
+                <div class="loading">Loading...</div>
+                <ul id="work-block">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="hobby-frame">
+        <div class="changelog">
+            <div class="title flash">Hobbies</div>
+            <div class="exp">
+                <div class="loading">Loading...</div>
+                <ul id="hobbies">
+                    <li class="' + x.type +'">
+                        <div>
+                            <p>Some title sdfsdfsdfsdfsdfsdfsdfsdfffffffffffffffffffffffffffffffffffffffffffffffff</p>
+                        </div>
+                        <div>
+                            <img src="img/pi1.jpg" border=1 width="300">
+                            <img src="img/pi2.jpg" border=1 width="300">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="updates">
+            <div class="title flash">My projects</div>
+            If you want to dive into the code, you should see my
+            <a href="https://github.com/dyvakya/">GitHub</a>.
+            <div class="exp">
+                <div class="loading">Loading...</div>
+                <ul id="projects-block">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="content" style="height: 300px"></div>
+
+
+
+
 </div>
 </body>
 </html>

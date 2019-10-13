@@ -1,93 +1,12 @@
 {
   "data": [
     {
-      "type": "edu",
-      "date": "September 2018",
+      "type": "hobby",
       "description": {
-        "what": "Finished course in udemy",
-        "emphasis": "Microservices Software Architecture: Patterns and Techniques",
-        "info": "<a href='https://www.udemy.com/'>https://www.udemy.com/</a>"
+        "title": "Microcomputers, Computer vision, RaspberryPi",
+        "technologies": "Linux, OpenCV, Python",
+        "photo": ["/img/pi1.jpg", "/img/pi2.jpg"]
       }
-    },
-    {
-      "type": "edu",
-      "date": "January 2018",
-      "description": {
-        "what": "Finished course",
-        "emphasis": "JavaScript tutorial",
-        "info": "<a href='https://www.sololearn.com/'>https://www.sololearn.com/</a>"
-      }
-    },
-    {
-      "type": "edu",
-      "date": "January 2018",
-      "description": {
-        "what": "Finished course in udemy",
-        "emphasis": "Building an E-Commerce Store Using Java Spring Framework",
-        "info": "<a href='https://www.udemy.com/'>https://www.udemy.com/</a>"
-      }
-    },
-    {
-      "type": "edu",
-      "date": "January 2018",
-      "description": {
-        "what": "Finished course",
-        "emphasis": "Java PRO",
-        "info": "<a href='https://prog.kiev.ua/'>https://prog.kiev.ua/</a>"
-      }
-    },
-    {
-      "type": "edu",
-      "date": "April 2017",
-      "description": {
-        "what": "Finished course",
-        "emphasis": "SQL fundamentals",
-        "info": "<a href='https://www.sololearn.com/'>https://www.sololearn.com/</a>"
-      }
-    },
-    {
-      "type": "fun",
-      "date": "February 2017",
-      "description": {
-        "what": "Finished course",
-        "emphasis": "CSS fundamentals",
-        "info": "<a href='https://www.sololearn.com/'>https://www.sololearn.com/</a>"
-      }
-    },
-    {
-      "type": "fun",
-      "date": "August 2016",
-      "description": {
-        "what": "Finished course",
-        "emphasis": "HTML fundamentals",
-        "info": "<a href='https://www.sololearn.com/'>https://www.sololearn.com/</a>"
-      }
-    },
-    {
-      "type": "fun",
-      "date": "August 2016",
-      "description": {
-        "what": "Finished course",
-        "emphasis": "Java tutorial",
-        "info": "<a href='https://www.sololearn.com/'>https://www.sololearn.com/</a>"
-      }
-    },
-    {
-      "type": "edu",
-      "date": "August 2016",
-      "description": {
-        "what": "Finished course",
-        "emphasis": "Java OOP",
-        "info": "<a href='https://prog.kiev.ua/'>https://prog.kiev.ua/</a>"
-      }
-    },
-    {
-      "type": "fun",
-      "date": "Mart 2015",
-      "description": {
-        "what": "Received certificate",
-        "emphasis": "1S : Professional",
-        "info": ""
-      }
-    }]
+    }
+  ]
 }

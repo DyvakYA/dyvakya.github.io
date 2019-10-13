@@ -37,15 +37,6 @@
       }
     },
     {
-      "type": "intern",
-      "date": "2016",
-      "description": {
-        "what": "Interned at",
-        "emphasis": "EPAM Systems",
-        "info": "JSP + Servlet API + JDBC + MySQL"
-      }
-    },
-    {
       "type": "job",
       "date": "2012",
       "description": {
