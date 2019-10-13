@@ -3,3 +3,11 @@
   margin: 15px 0;
   text-transform: none;
 }
+
+.loading {
+  animation: blinker 1s linear infinite;
+  margin: 1em 0 0 0;
+}
+.loading.hide {
+  display: none;
+}
