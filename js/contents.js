@@ -146,13 +146,7 @@ function hobbies() {
     pull('contents/hobbies.json')
         .then(function (response) {
             document.getElementsByClassName('loading')[4].classList.add('hide');
-            console.log(JSON.stringify(response.data));
             response.data.forEach(function (x) {
-                // h.innerHTML += '<li class="' + x.type +
-                //     '"><div class="desc"><div>' + x.description.what + ' ' +
-                //     '<em>' + x.description.emphasis + '</em></div><div class="info">' +
-                //     x.description.info + '</div></div></li>';
-
                 h.innerHTML += '<li class="' + x.type +
                     '"><div class="desc"><div>' + x.description.title + ' ' +
                     '<img class="photo" src="' + x.description.photo + '"></div></li>'
@@ -212,7 +206,7 @@ function pressVars() {
 
         setInterval(() => {
             setRandomPhoto();
-        }, 2500);
+        }, 5000);
 
     }, false);
 })();
