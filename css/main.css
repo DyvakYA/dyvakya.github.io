@@ -8,6 +8,7 @@ body {
 }
 
 button {
+    margin-bottom: 1em;
     width: 120px;
     height: 30px;
     border: 2px solid #96979c;
@@ -165,19 +166,23 @@ h2 {
 }
 
 /*.changelog li .desc {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    margin-bottom: 2px;*/
 /*}*/
+
 /*.changelog li .desc .info {*/
-/*  visibility: hidden;*/
-/*  max-height: 0;*/
-/*  transition: visibility 0s, max-height 0.5s linear;*/
+/*    visibility: hidden;*/
+/*    max-height: 0;*/
+/*    transition: visibility 0s, max-height 0.5s linear;*/
 /*}*/
+
 /*.changelog li .desc:hover .info {*/
-/*  visibility: visible;*/
-/*  max-height: 100px;*/
-/*  transition: max-height 0.5s linear;*/
+/*    visibility: visible;*/
+/*    max-height: 100px;*/
+/*    transition: max-height 0.5s linear;*/
 /*}*/
+
 .changelog .loading {
     animation: blinker 1s linear infinite;
     margin: 1em 0 0 0;
@@ -238,6 +243,23 @@ h2 {
 }
 
 .bio .title {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: .8em 0;
+}
+
+.hobby {
+    margin: 0 0 2em 0;
+    display: block !important;
+}
+
+.hobby a {
+    color: #E9BC3F;
+    text-decoration: none;
+}
+
+.hobby .title {
     cursor: pointer;
     font-size: 1.2em;
     font-weight: 700;
@@ -403,6 +425,7 @@ h2 {
 }
 
 .photo {
+    margin-top: 1em;
     display: block;
     border: 1px;
     width: 300px;

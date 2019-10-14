@@ -1,19 +1,38 @@
-function navigation(event) {
-    let buttons = document.getElementsByTagName('button');
-    setButtonEventListeners(event, buttons);
+function navigation() {
+    Array.from(document.getElementsByTagName('button')).forEach(e => {
+        e.addEventListener('click', bioToggle);
+    });
 }
 
-function setButtonEventListeners(event, buttons) {
-    Array.prototype.forEach.call(buttons, function (button) {
-        button.addEventListener(event, function () {
-            let activeBlock = button.id + '-frame';
-            let block = document.getElementById(activeBlock);
-            let content = document.getElementById('content');
-            content.innerHTML = block.innerHTML;
-            let titles = document.getElementsByClassName('title');
-            setTitleEventListeners(event, titles);
-        }, false);
+function bioToggle(e) {
+    let bioType = e.target;
+
+    off(bioType);
+    on(bioType);
+    onHtmlBlock(bioType);
+
+    let titles = document.getElementsByClassName('title');
+    setTitleEventListeners('click', titles);
+}
+
+function off() {
+    Array.from(document.getElementsByTagName('button')).forEach(butt => {
+        butt.style.borderColor = '#96979c';
+        butt.style.color = '#96979c';
+        butt.style.background = '';
     });
+}
+
+function on(bioType) {
+    let color = 'rgba(150, 151, 156, 0.1)';
+    bioType.style.cssText = `background: ${color}; font-weight: bold;`;
+}
+
+function onHtmlBlock(bioType) {
+    let activeBlock = bioType.id + '-frame';
+    let block = document.getElementById(activeBlock);
+    let content = document.getElementById('content');
+    content.innerHTML = block.innerHTML;
 }
 
 function setTitleEventListeners(event, titles) {
@@ -34,31 +53,6 @@ function setTitleEventListeners(event, titles) {
 //         event.target.checked ? list.add('dark-mode') : list.remove('dark-mode');
 //     });
 // }
-
-function setBioEventListener() {
-    Array.from(document.getElementsByTagName('button')).forEach(e => {
-        e.addEventListener('click', bioToggle);
-    });
-}
-
-function bioToggle(e) {
-    let bioType = e.target;
-    let color = 'rgba(150, 151, 156, 0.1)';
-    off(bioType);
-    bioType.style.cssText = `background: ${color}; font-weight: bold;`;
-    //document.getElementsByClassName(bioType.id)[0].classList.add('show');
-}
-
-function off(bioType) {
-    Array.from(document.getElementsByTagName('button')).forEach(butt => {
-        butt.style.borderColor = '#96979c';
-        butt.style.color = '#96979c';
-        butt.style.background = '';
-    });
-    Array.from(document.getElementsByClassName('bio')).forEach(e => {
-        e.classList.remove('show');
-    });
-}
 
 
 // build headers for requests
@@ -84,29 +78,28 @@ function pull(path) {
 function education() {
     let h = document.getElementById('education-block');
     pull('contents/education.json')
-        .then(function (response) {
-            document.getElementsByClassName('loading')[0].classList.add('hide');
-            response.data.forEach(function (x) {
-                h.innerHTML += '<li class="' + x.type +
-                    '"><div class="left">' + x.date +
-                    '</div><div class="desc"><div>' + x.description.what + ' ' +
-                    '<em>' + x.description.emphasis + '</em></div><div class="info">' +
-                    x.description.info + '</div></div></li>';
+        .then(response => {
+            loadingOff(0);
+            response.data.forEach(item => {
+                h.innerHTML += getHTML(item);
             });
         });
+}
+
+function getHTML(item) {
+    return '<li class="' + item.type + '">' +
+        '<div class="left">' + item.date + '</div>' +
+        '<div class="desc"><div>' + item.description.what + ' ' + '<em>' + item.description.emphasis + '</em></div>' +
+        '<div class="info">' + item.description.info + '</div></div></li>';
 }
 
 function work() {
     let h = document.getElementById('work-block');
     pull('contents/work.json')
-        .then(function (response) {
-            document.getElementsByClassName('loading')[1].classList.add('hide');
-            response.data.forEach(function (x) {
-                h.innerHTML += '<li class="' + x.type +
-                    '"><div class="left">' + x.date +
-                    '</div><div class="desc"><div>' + x.description.what + ' ' +
-                    '<em>' + x.description.emphasis + '</em></div><div class="info">' +
-                    x.description.info + '</div></div></li>';
+        .then(response => {
+            loadingOff(1);
+            response.data.forEach(item => {
+                h.innerHTML += getHTML(item);
             });
         });
 }
@@ -115,13 +108,9 @@ function internship() {
     let h = document.getElementById('internship-block');
     pull('contents/internship.json')
         .then(function (response) {
-            document.getElementsByClassName('loading')[2].classList.add('hide');
-            response.data.forEach(function (x) {
-                h.innerHTML += '<li class="' + x.type +
-                    '"><div class="left">' + x.date +
-                    '</div><div class="desc"><div>' + x.description.what + ' ' +
-                    '<em>' + x.description.emphasis + '</em></div><div class="info">' +
-                    x.description.info + '</div></div></li>';
+            loadingOff(2);
+            response.data.forEach(item => {
+                h.innerHTML += getHTML(item);
             });
         });
 }
@@ -130,13 +119,9 @@ function courses() {
     let h = document.getElementById('courses-block');
     pull('contents/courses.json')
         .then(function (response) {
-            document.getElementsByClassName('loading')[3].classList.add('hide');
-            response.data.forEach(function (x) {
-                h.innerHTML += '<li class="' + x.type +
-                    '"><div class="left">' + x.date +
-                    '</div><div class="desc"><div>' + x.description.what + ' ' +
-                    '<em>' + x.description.emphasis + '</em></div><div class="info">' +
-                    x.description.info + '</div></div></li>';
+            loadingOff(3);
+            response.data.forEach(item => {
+                h.innerHTML += getHTML(item);
             });
         });
 }
@@ -145,23 +130,26 @@ function hobbies() {
     let h = document.getElementById('hobbies-block');
     pull('contents/hobbies.json')
         .then(function (response) {
-            document.getElementsByClassName('loading')[4].classList.add('hide');
-            response.data.forEach(function (x) {
-                h.innerHTML += '<li class="' + x.type +
-                    '"><div class="desc"><div>' + x.description.title + ' ' +
-                    '<img class="photo" src="' + x.description.photo + '"></div></li>'
-                console.log(h.innerHTML);
+            loadingOff(4);
+            response.data.forEach(item => {
+                h.innerHTML += '<li class="' + item.type + '">' +
+                    '<div>' + item.description.title + '</div>' +
+                    '<div>' + item.description.technologies + '</div>' +
+                    '<img class="photo" src="' + item.description.photo + '"></li>'
             });
         });
 }
 
 // generate projects section
-function projects(articles) {
+function projects() {
     let p = document.getElementById('projects-block');
-    document.getElementsByClassName('loading')[5].classList.add('hide');
-    articles.forEach(function (item) {
-        p.innerHTML += '<li><a href="' + item.url + '">' + item.title + '</a></li>';
-    });
+    pull('contents/projects.json')
+        .then(function (response) {
+            loadingOff(5);
+            response.data.forEach(item => {
+                p.innerHTML += '<li><a href="' + item.url + '">' + item.title + '</a></li>';
+            });
+        });
 }
 
 function setRandomPhoto() {
@@ -169,41 +157,29 @@ function setRandomPhoto() {
     document.getElementById('picture').src = `img/photos/photo_${num}.jpg`;
 }
 
-// first 5 projects articles
-function pressVars() {
-    let recent = [];
-
-    pull('contents/projects.json')
-        .then(function (response) {
-            for (let i = 0; i < 20; i++) {
-                if (response.data[i]) {
-                    recent[i] = response.data[i];
-                }
-            }
-        })
-        .then(function () {
-            projects(recent);
-        });
+function loadingOff(loadingNum) {
+    document.getElementsByClassName('loading')[loadingNum].classList.add('hide');
 }
 
 // get all the contents
 (function () {
     window.addEventListener('load', function () {
 
+        // fetch data from json files in contents folder
         education();
         work();
         internship();
         courses();
         hobbies();
+        projects();
 
-        pressVars();
-        navigation('click');
+        // add listeners for buttons and blocks with information
+        navigation();
 
-        //setModeEventListener();
-        setBioEventListener();
-
+        // set photo from folder
         setRandomPhoto();
 
+        // change photo after interval
         setInterval(() => {
             setRandomPhoto();
         }, 5000);
