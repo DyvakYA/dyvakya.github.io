@@ -5,7 +5,7 @@
       "description": {
         "title": "Microcomputers, Computer vision, RaspberryPi",
         "technologies": "Linux, OpenCV, Python",
-        "photo": ["/img/pi1.jpg", "/img/pi2.jpg"]
+        "photo": "img/pi1.jpg"
       }
     }
   ]
