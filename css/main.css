@@ -121,6 +121,11 @@ h2 {
     text-decoration: none;
 }
 
+.changelog a:hover{
+    color: #4287f5;
+    text-decoration: none;
+}
+
 .changelog .title {
     cursor: pointer;
     font-size: 1.2em;
@@ -198,6 +203,11 @@ h2 {
 
 .updates a {
     color: #5A6794;
+    text-decoration: none;
+}
+
+.updates a:hover{
+    color: #4287f5;
     text-decoration: none;
 }
 
